@@ -24,5 +24,5 @@ Create a script to download either **zscaler-ips-recommended-v4.rsc** and **zsca
 
 ```
 /system scheduler
-add interval=1d name=zscaler-ips on-event=cloudflare-ips policy=ftp,read,write,test start-date=2025-04-23 start-time=06:45:00
+add interval=1d name=zscaler-ips on-event=zscaler-ips policy=ftp,read,write,test start-date=2025-04-23 start-time=06:45:00
 ```
