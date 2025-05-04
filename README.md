@@ -8,11 +8,21 @@ Create a script to download either **zscaler-ips-recommended-v4.rsc** and **zsca
 ### Sample Script
 
 ```
+:log info "Download Zscaler IP list";
+/tool fetch url="https://raw.githubusercontent.com/GForceIndustries/mikrotik-zscaler-ips/refs/heads/main/zscaler-ips-recommended-v4.rsc" mode=https dst-path=zscaler-ips-recommended-v4.rsc;
+/tool fetch url="https://raw.githubusercontent.com/GForceIndustries/mikrotik-zscaler-ips/refs/heads/main/zscaler-ips-recommended-v6.rsc" mode=https dst-path=zscaler-ips-recommended-v6.rsc;
 
+:log info "Remove current Zscaler IPs";
+/ip firewall address-list remove [find where list="zscaler-ips-ipv4"];
+/ipv6 firewall address-list remove [find where list="zscaler-ips-ipv6"];
+:log info "Import newest Zscaler IPs";
+/import file-name=zscaler-ips-recommended-v4.rsc;
+/import file-name=zscaler-ips-recommended-v6.rsc;
 ```
 
 ### Sample Schedule
 
 ```
-
+/system scheduler
+add interval=1d name=zscaler-ips on-event=cloudflare-ips policy=ftp,read,write,test start-date=2025-04-23 start-time=06:45:00
 ```
