@@ -33,4 +33,4 @@ You are free to use the provided MikroTik configuration files to aid in maintain
 
 Configuration files are provided without warranty. While they are offered in good faith, no assurance is offered that they are appropriate for your environment and no liability will is accepted for any outcomes of their use. You are responsible for examining the configuration provided and ascertaining that it is suitable for your use case.
 
-While the daily configuration files are generated using information provided by Zscaler, they are 100% unofficial and are not endorsed or maintained by Zscaler.
+While the daily configuration files are generated using information provided by Zscaler Inc., they are 100% unofficial and are not endorsed or maintained by Zscaler Inc.
