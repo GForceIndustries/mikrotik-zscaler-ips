@@ -1,4 +1,4 @@
-# Generated on Tue Nov  4 05:34:55 2025 UTC
+# Generated on Wed Nov  5 05:34:58 2025 UTC
 /ip firewall address-list
 add list=zscaler-ips-ipv4 address=8.25.203.0/24
 add list=zscaler-ips-ipv4 address=64.74.126.64/26
@@ -16,7 +16,6 @@ add list=zscaler-ips-ipv4 address=147.161.128.0/17
 add list=zscaler-ips-ipv4 address=159.254.0.0/16
 add list=zscaler-ips-ipv4 address=159.254.62.0/23
 add list=zscaler-ips-ipv4 address=159.254.66.0/23
-add list=zscaler-ips-ipv4 address=164.137.0.0/16
 add list=zscaler-ips-ipv4 address=165.225.0.0/17
 add list=zscaler-ips-ipv4 address=165.225.192.0/18
 add list=zscaler-ips-ipv4 address=167.103.0.0/16
