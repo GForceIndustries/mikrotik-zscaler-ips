@@ -1,4 +1,4 @@
-# Generated on Wed Jun 24 06:44:47 2026 UTC
+# Generated on Thu Jun 25 06:44:49 2026 UTC
 /ip firewall address-list
 add list=zscaler-ips-ipv4 address=8.25.203.0/24
 add list=zscaler-ips-ipv4 address=64.74.126.64/26
