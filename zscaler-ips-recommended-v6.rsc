@@ -1,4 +1,4 @@
-# Generated on Sat Nov 14 12:20:50 2026 UTC
+# Generated on Sun Nov 15 12:52:09 2026 UTC
 /ipv6 firewall address-list
 add list=zscaler-ips-ipv6 address=2400:7aa0:131b::/48
 add list=zscaler-ips-ipv6 address=2400:7aa0:131c::/48
